@@ -2,7 +2,6 @@ import React from "react";
 
 export const Head = React.memo(() => {
     return (
-        <header className="w-full">
             <nav className="barra-cima">
                 <div className="barra-baixo">
                     <div className="logo-pesquisa-container">
@@ -165,6 +164,5 @@ export const Head = React.memo(() => {
                     </div>
                 </div>
             </nav>
-        </header>
     );
 })
