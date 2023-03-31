@@ -329,8 +329,48 @@ video {
     --tw-backdrop-sepia:  ;
 }
 
-.h-screen {
-    height: 100vh;
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bottom-0 {
+    bottom: 0px;
+}
+
+.left-0 {
+    left: 0px;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.ml-3 {
+    margin-left: 0.75rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-64 {
+    width: 16rem;
 }
 
 .w-full {
@@ -582,6 +622,7 @@ video {
 }
 
 .nome-empresa {
+    display: none;
     align-self: center;
     white-space: nowrap;
     font-size: 1.5rem;
@@ -592,6 +633,12 @@ video {
 :is(.dark .nome-empresa) {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+    .nome-empresa {
+        display: block;
+    }
 }
 
 .avatar-img {
