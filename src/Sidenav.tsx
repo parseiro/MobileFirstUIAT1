@@ -2,7 +2,7 @@ import React from "react";
 
 export const Sidenav = React.memo(() => {
     return (
-        <aside className="fixed left-0 w-64 h-full">
+        <aside className="fixed left-0 top-0 z-20 w-64 h-full">
             <div className="overflow-y-auto py-4 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
                 <ul className="space-y-2">
                     <li>
