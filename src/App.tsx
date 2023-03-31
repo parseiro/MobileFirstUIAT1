@@ -1,10 +1,12 @@
 import './App.css'
-import Head from "./Head";
+import {Head} from "./Head";
+import {Sidenav} from "./Sidenav";
 
 export default function App() {
-  return (
-    <main className="h-screen w-full">
-      <Head/>
-    </main>
-  )
+    return (
+        <>
+            <Head/>
+            <Sidenav/>
+        </>
+    )
 }

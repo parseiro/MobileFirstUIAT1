@@ -1,9 +1,8 @@
 import React from "react";
 
-
-function Head() {
+export const Head = React.memo(() => {
     return (
-        <header>
+        <header className="w-full">
             <nav className="barra-cima">
                 <div className="barra-baixo">
                     <div className="logo-pesquisa-container">
@@ -168,6 +167,4 @@ function Head() {
             </nav>
         </header>
     );
-}
-
-export default React.memo(Head);
+})
