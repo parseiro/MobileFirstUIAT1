@@ -2,32 +2,32 @@ import React from "react";
 
 export const Sidenav = React.memo(() => {
     return (
-        <aside className="fixed left-0 w-64 h-full">
-            <div className="overflow-y-auto py-4 px-3 h-full bg-white border-r border-gray-200 dark:bg-gray-800 dark:border-gray-700">
-                <ul className="space-y-2">
+        <aside style={{position: "fixed", left: "0", width: "16rem", height: "100%"}}>
+            <div style={{overflowY: "auto", paddingTop: "4px", paddingBottom: "4px", paddingLeft: "3px", paddingRight: "3px", height: "100%", backgroundColor: "white", borderRight: "1px solid #e5e7eb"}}>
+                <ul style={{marginTop: "calc(0.5rem * calc(1 - var(--tw-space-y-reverse)))", marginBottom: "calc(0.5rem * var(--tw-space-y-reverse))"}}>
                     <li>
                         <a
                             href="#"
-                            className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                            style={{display: "flex", alignItems: "center", padding: "0.5rem", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.375rem", transition: "background-color 0.15s ease 0s", backgroundColor: "transparent"}}
                         >
-                            <span className="ml-3">Visão geral</span>
+                            <span style={{marginLeft: "0.75rem"}}>Visão geral</span>
                         </a>
                     </li>
                     <li>
                         <button
                             type="button"
-                            className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                            aria-controls="dropdown-pages"
-                            data-collapse-toggle="dropdown-pages"
+                            style={{display: "flex", alignItems: "center", padding: "0.5rem", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.375rem", transition: "background-color 0.15s ease 0s", backgroundColor: "transparent"}}
                         >
                             <span className="flex-1 ml-3 text-left whitespace-nowrap">Páginas</span>
                         </button>
                         <ul id="dropdown-pages"
-                            className="hidden py-2 space-y-2">
+                            className="hidden py-2 space-y-2"
+                            style={{display: "none", paddingTop: "0.5rem", paddingBottom: "0.5rem", paddingLeft: "0.5rem", paddingRight: "0.5rem", marginTop: "calc(0.5rem * calc(1 - var(--tw-space-y-reverse)))", marginBottom: "calc(0.5rem * var(--tw-space-y-reverse))"}}
+                        >
                             <li>
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                    style={{display: "flex", alignItems: "center", padding: "0.5rem", paddingLeft: "2.75rem", width: "100%", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.5rem", transition: "background-color 0.15s ease 0s", backgroundColor: "transparent"}}
                                 >
                                     Configurações
                                 </a>
@@ -35,7 +35,7 @@ export const Sidenav = React.memo(() => {
                             <li>
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                    style={{display: "flex", alignItems: "center", padding: "0.5rem", paddingLeft: "2.75rem", width: "100%", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.5rem", transition: "background-color 0.15s ease 0s", backgroundColor: "transparent"}}
                                 >
                                     Kanban
                                 </a>
@@ -43,7 +43,7 @@ export const Sidenav = React.memo(() => {
                             <li>
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                    style={{display: "flex", alignItems: "center", padding: "0.5rem", paddingLeft: "2.75rem", width: "100%", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.5rem", transition: "background-color 0.15s ease 0s", backgroundColor: "transparent"}}
                                 >
                                     Calendário
                                 </a>
@@ -53,7 +53,7 @@ export const Sidenav = React.memo(() => {
                     <li>
                         <button
                             type="button"
-                            className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            style={{display: "flex", alignItems: "center", padding: "0.5rem", width: "100%", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.5rem", backgroundColor: "transparent"}}
                         >
 
                             <span className="flex-1 ml-3 text-left whitespace-nowrap">Vendas</span>
@@ -71,60 +71,16 @@ export const Sidenav = React.memo(() => {
                     <li>
                         <button
                             type="button"
-                            className="flex items-center p-2 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                            style={{display: "flex", alignItems: "center", padding: "0.5rem", width: "100%", fontSize: "1rem", fontWeight: "normal", color: "rgb(55, 65, 81)", borderRadius: "0.5rem", backgroundColor: "transparent"}}
                         >
 
-                            <span className="flex-1 ml-3 text-left whitespace-nowrap">
+                            <span style={{display: "flex", marginLeft: "0.75rem", textAlign: "left", whiteSpace: "nowrap"}}>
             Authentication
           </span>
 
                         </button>
-                        <ul id="dropdown-authentication"
-                            className="hidden py-2 space-y-2">
-                            <li>
-                                <a
-                                    href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    Sign In
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    Sign Up
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="flex items-center p-2 pl-11 w-full text-base font-normal text-gray-900 rounded-lg transition duration-75 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                >
-                                    Forgot Password
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                 </ul>
-            </div>
-            <div className="hidden absolute bottom-0 left-0 z-20 justify-center p-4 space-x-4 w-full bg-white dark:bg-gray-800 lg:flex">
-                <a
-                    href="#"
-                    className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded cursor-pointer hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
-                >
-
-                    Settings
-                </a>
-                <a
-                    href="#"
-                    data-tooltip-target="tooltip-settings"
-                    className="inline-flex items-center p-2 text-sm font-medium text-gray-500 rounded cursor-pointer hover:text-gray-900 dark:hover:text-white dark:text-gray-400"
-                >
-
-                    Help
-                </a>
             </div>
         </aside>
     );
