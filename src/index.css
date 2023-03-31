@@ -55,7 +55,7 @@
 }
 
 .nome-empresa {
-    @apply self-center text-2xl font-semibold whitespace-nowrap dark:text-white;
+    @apply self-center text-2xl font-semibold whitespace-nowrap dark:text-white hidden sm:block;
 }
 
 .avatar-img {
