@@ -2,7 +2,7 @@ import React from "react";
 
 export const Sidenav = React.memo(() => {
     return (
-        <aside style={{position: "fixed", left: "0", width: "16rem", height: "100%"}}>
+        <aside style={{position: "fixed", left: "0", top: "0", zIndex: "20", width: "16rem", height: "100%"}}>
             <div style={{overflowY: "auto", paddingTop: "4px", paddingBottom: "4px", paddingLeft: "3px", paddingRight: "3px", height: "100%", backgroundColor: "white", borderRight: "1px solid #e5e7eb"}}>
                 <ul style={{marginTop: "calc(0.5rem * calc(1 - var(--tw-space-y-reverse)))", marginBottom: "calc(0.5rem * var(--tw-space-y-reverse))"}}>
                     <li>
