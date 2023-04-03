@@ -1,0 +1,23 @@
+.principal {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    grid-area: content;
+}
+
+.heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}

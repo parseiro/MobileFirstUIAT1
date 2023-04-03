@@ -7,8 +7,10 @@ export default function App() {
     return (
         <>
             <Head/>
-            <Sidenav/>
-            <MainOverview/>
+            <main className="principal">
+                <Sidenav/>
+                <MainOverview/>
+            </main>
         </>
     )
 }
