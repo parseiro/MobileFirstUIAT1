@@ -1,7 +1,8 @@
 import './App.css'
-import {Head} from "./Head";
-import {Sidenav} from "./Sidenav";
-import {MainOverview} from "./MainOverview";
+import {Head} from "./Head.jsx";
+import {Sidenav} from "./Sidenav.jsx";
+import {MainOverview} from "./MainOverview.jsx";
+
 
 export default function App() {
     return (

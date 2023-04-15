@@ -28,13 +28,7 @@ const CardStyle = styled.div`
   }
 `;
 
-interface Props {
-    title?: string;
-    text?: string;
-    button?: string;
-}
-
-function CardToExport(props: Props) {
+function CardToExport(props) {
     const {title, text, button} = props;
 
     return (

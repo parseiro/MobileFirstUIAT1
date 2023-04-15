@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MainOverview.module.css";
-import {Card} from "./Card";
+import {Card} from "./Card.jsx";
 
 
 // This is a component that uses CSS modules
